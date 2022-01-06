@@ -2,8 +2,8 @@ import "./App.css";
 import { useState } from "react";
 import axios from "axios";
 
-const API_KEY = "AIzaSyBZ16VEz7zgujCV6dIVZDubkA1zHv9_R60";
-const ENGINE = "8746dcc705c710b67";
+const API_KEY = process.env.API_KEY;
+const ENGINE = process.env.ENGINE;
 
 function App() {
   function submitHandler(_search) {
