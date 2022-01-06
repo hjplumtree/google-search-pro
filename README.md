@@ -1,6 +1,12 @@
 # Google Search Pro
 
-Must include 2 words, site search ...
+it helps you search better and quicker
+
+## Feature(plan too)
+
+- A search word in the title
+- Must includes two search words
+- Search results for a specific site
 
 ## Using
 
