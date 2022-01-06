@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import axios from "axios";
+
+const API_KEY = "AIzaSyBZ16VEz7zgujCV6dIVZDubkA1zHv9_R60";
+const ENGINE = "8746dcc705c710b67";
 
 function App() {
+  function submitHandler(_search) {
+    setSearch(_search);
+  }
+  const [search, setSearch] = useState("");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBar onSubmit={submitHandler} />
+      <Result search={search} />
     </div>
   );
+}
+
+function SearchBar(props) {
+  const [inputValue, setInputValue] = useState("");
+
+  function submitHandler(evt) {
+    evt.preventDefault();
+    props.onSubmit(inputValue);
+  }
+
+  return (
+    <form onSubmit={submitHandler}>
+      <input
+        name="search"
+        type="text"
+        onChange={(evt) => setInputValue(evt.target.value)}
+      />
+      <input type="submit" value="Search" />
+    </form>
+  );
+}
+
+function Result(props) {
+  const search = props.search;
+  let data = [];
+  if (search) {
+    const url = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${ENGINE}&q=${search}`;
+    axios.get(url).then((res) => console.log(res.data.items));
+  }
+
+  return <div>results</div>;
 }
 
 export default App;
