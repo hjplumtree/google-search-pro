@@ -9,7 +9,10 @@ it helps you search better and quicker
 - Search results for a specific site
 
 ## Problem & Solution
-1. + **Problem**: Free limit is 100 queries per day   + **Solution**: Using Iframe?
++ **Problem**: Free limit is 100 queries per day
++ **Solution**: Show google result with Iframe?
+
+* * *
 
 ## Using
 React, Google search engine API, axios
