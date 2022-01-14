@@ -39,3 +39,5 @@ Was going to use axios but API is limited
 
 - https://support.google.com/websearch/answer/2466433?hl=en
 - https://stenevang.wordpress.com/2013/02/22/google-advanced-power-search-url-request-parameters/
+- https://makemoneyskills.com/googling-31-tips/
+- https://brunch.co.kr/@jinha0802/23
