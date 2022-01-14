@@ -1,29 +1,20 @@
 import "./App.css";
 import { useState } from "react";
-import axios from "axios";
-
-const API_KEY = process.env.API_KEY;
-const ENGINE = process.env.ENGINE;
 
 function App() {
-  function submitHandler(_search) {
-    setSearch(_search);
-  }
-  const [search, setSearch] = useState("");
   return (
     <div className="App">
-      <SearchBar onSubmit={submitHandler} />
-      <Result search={search} />
+      <SearchContainer />
     </div>
   );
 }
 
-function SearchBar(props) {
+function SearchContainer(props) {
   const [inputValue, setInputValue] = useState("");
 
   function submitHandler(evt) {
     evt.preventDefault();
-    props.onSubmit(inputValue);
+    window.open(`http://google.com/search?q=${inputValue}`);
   }
 
   return (
@@ -36,17 +27,6 @@ function SearchBar(props) {
       <input type="submit" value="Search" />
     </form>
   );
-}
-
-function Result(props) {
-  const search = props.search;
-  let data = [];
-  if (search) {
-    const url = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${ENGINE}&q=${search}`;
-    axios.get(url).then((res) => console.log(res.data.items));
-  }
-
-  return <div>results</div>;
 }
 
 export default App;
