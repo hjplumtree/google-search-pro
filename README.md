@@ -1,18 +1,23 @@
 # Google Search Pro
 
-it helps you search better and quicker
+Don't remember Google search tips?  
+No need just search like pro!!
 
-## Feature(plan too)
+## Features(in progress)
 
 - A search word in the title
 - Must includes two search words
 - Search results for a specific site
 
-## Problem & Solution
-+ **Problem**: Free limit is 100 queries per day
-+ **Solution**: Show google result with Iframe?
-
-* * *
-
 ## Using
-React, Google search engine API, axios
+
+React, react-router,  
+~~Google search engine API, axios~~  
+API is limited therefore no need axios either
+
+---
+
+## Problem & Solution
+
+- **Problem**: Free limit is 100 queries per day
+- **Solution**: Load google result page on Iframe?
