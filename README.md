@@ -13,15 +13,13 @@ No need just search like pro!!
 
 ---
 
-## Using
+## Stacks
 
-React, react-router,  
-~~Google search engine API, axios~~  
-Was going to use axios but API is limited
+React, react-router, ~~Google search engine API, axios~~  
 
 ---
 
-## Development log
+## Issues
 
 1. Google search engine API
 
@@ -35,6 +33,14 @@ Was going to use axios but API is limited
 
 ---
 
+## To do
+
+- [ ] react-router
+- [ ] css
+- [ ] github page
+- [ ] how to get feedback?
+
+---
 ## References
 
 - https://support.google.com/websearch/answer/2466433?hl=en
