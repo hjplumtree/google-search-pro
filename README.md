@@ -32,3 +32,9 @@ Was going to use axios but API is limited
 
 - **Problem**: "Refused to display 'https://www.google.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'."
 - **Solution**: Open the result page in new tab
+
+---
+
+## References
+
+- https://support.google.com/websearch/answer/2466433?hl=en
