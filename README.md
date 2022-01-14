@@ -38,3 +38,4 @@ Was going to use axios but API is limited
 ## References
 
 - https://support.google.com/websearch/answer/2466433?hl=en
+- https://stenevang.wordpress.com/2013/02/22/google-advanced-power-search-url-request-parameters/
