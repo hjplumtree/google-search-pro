@@ -35,7 +35,7 @@ React, react-router, ~~Google search engine API, axios~~
 
 ## To do
 
-- [x] react-router
+- [X] react-router
 - [ ] css
 - [ ] github page
 - [ ] how to get feedback?
