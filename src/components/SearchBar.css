@@ -1,0 +1,4 @@
+﻿.search-bar {
+  width: clamp(400px, 100%, 600px);
+  padding: 20px;
+}
