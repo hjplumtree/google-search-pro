@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SearchButton from "../components/SearchButton";
 
 export default function SearchInSite() {
   const [query, setQuery] = useState("");
@@ -9,25 +10,30 @@ export default function SearchInSite() {
   }
   return (
     <form onSubmit={submitHandler}>
-      <label htmlFor="query">
-        <input
-          name="query"
-          type="text"
-          placeholder="Search"
-          onChange={(evt) => setQuery(evt.target.value)}
-        />
-      </label>
-      <p>
-        <label htmlFor="site-url">
+      <div className="search-bar__basic">
+        <label htmlFor="query">
           <input
-            name="site-url"
+            autoFocus
+            name="query"
             type="text"
-            placeholder="URL"
-            onChange={(evt) => setSiteUrl(evt.target.value)}
+            placeholder="Search"
+            onChange={(evt) => setQuery(evt.target.value)}
           />
         </label>
-      </p>
-      <input type="submit" value="Search" />
+        <SearchButton />
+      </div>
+      <div className="search-bar__additional">
+        <p>
+          <label htmlFor="site-url">
+            <input
+              name="site-url"
+              type="text"
+              placeholder="URL"
+              onChange={(evt) => setSiteUrl(evt.target.value)}
+            />
+          </label>
+        </p>
+      </div>
     </form>
   );
 }

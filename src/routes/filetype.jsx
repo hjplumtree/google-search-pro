@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SearchButton from "../components/SearchButton";
 
 export default function SearchFileType() {
   const [query, setQuery] = useState("");
@@ -11,25 +12,30 @@ export default function SearchFileType() {
   }
   return (
     <form onSubmit={submitHandler}>
-      <label htmlFor="query">
-        <input
-          name="query"
-          type="text"
-          placeholder="Search"
-          onChange={(evt) => setQuery(evt.target.value)}
-        />
-      </label>
-      <p>
-        <label htmlFor="file-type">
+      <div className="search-bar__basic">
+        <label htmlFor="query">
           <input
-            name="file-type"
+            autoFocus
+            name="query"
             type="text"
-            placeholder="Types: pdf, ps, hwp, html, xls, ppt, doc, svg ..."
-            onChange={(evt) => setFileType(evt.target.value)}
+            placeholder="Search"
+            onChange={(evt) => setQuery(evt.target.value)}
           />
         </label>
-      </p>
-      <input type="submit" value="Search" />
+        <SearchButton />
+      </div>
+      <div className="search-bar__additional">
+        <p>
+          <label htmlFor="file-type">
+            <input
+              name="file-type"
+              type="text"
+              placeholder="Types: pdf, ps, hwp, html, xls, ppt, doc, svg ..."
+              onChange={(evt) => setFileType(evt.target.value)}
+            />
+          </label>
+        </p>
+      </div>
     </form>
   );
 }

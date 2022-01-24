@@ -1,7 +1,7 @@
 ﻿import { NavLink } from "react-router-dom";
 import "./Navigator.css";
 
-export function Navigator() {
+export default function Navigator() {
   function handleActive({ isActive }) {
     if (isActive) {
       return "active";

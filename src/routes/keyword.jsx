@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SearchButton from "../components/SearchButton";
 
 export default function SearchKeywords() {
   const [queries, setQueries] = useState([{ id: 1, q: "" }]);
@@ -16,7 +17,6 @@ export default function SearchKeywords() {
     } else {
       query = `"${queries[0].q}"`;
     }
-    console.log(query);
     window.open(`https://www.google.com/search?q=${query}`);
   }
 
@@ -48,29 +48,41 @@ export default function SearchKeywords() {
     <form onSubmit={submitHandler}>
       {queries.map((el) => {
         return (
-          <p key={el.id}>
-            <label>
+          <p className="search-bar__basic" key={el.id}>
+            {/* <div className="search-bar__basic"> */}
+            <label className="search-bar__keyword">
               <input
+                autoFocus
                 name={el.id}
                 type="text"
-                placeholder="Keyword Search"
+                placeholder={"Keyword " + el.id}
                 onChange={handleChange}
               />
             </label>
+            {!el.delete && <SearchButton />}
+
             {el.delete && (
-              <button onClick={() => handleDelete(el.id)}>X</button>
+              <button
+                className="search-bar__delete"
+                onClick={() => handleDelete(el.id)}
+              >
+                X
+              </button>
             )}
+            {/* </div> */}
           </p>
         );
       })}
 
-      <input
-        disabled={queries.length === 2 && true}
-        type="button"
-        value="Add Keyword"
-        onClick={handleClick}
-      />
-      <input type="submit" value="Search" />
+      <div className="search-bar__additional">
+        <input
+          className="search-bar__add-keyword"
+          disabled={queries.length === 2 && true}
+          type="button"
+          value="Add Keyword"
+          onClick={handleClick}
+        />
+      </div>
     </form>
   );
 }

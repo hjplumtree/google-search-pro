@@ -14,3 +14,8 @@
 #root {
   background: var(--main-color-opacity);
 }
+
+input[type="button"],
+button {
+  cursor: pointer;
+}

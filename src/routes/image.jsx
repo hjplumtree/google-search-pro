@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SearchButton from "../components/SearchButton";
 
 export default function SearchImage() {
   const [query, setQuery] = useState("");
@@ -12,35 +13,40 @@ export default function SearchImage() {
   }
   return (
     <form onSubmit={submitHandler}>
-      <label htmlFor="query">
-        <input
-          name="query"
-          type="text"
-          placeholder="Search"
-          onChange={(evt) => setQuery(evt.target.value)}
-        />
-      </label>
-      <p>
-        <label htmlFor="file-type">
+      <div className="search-bar__basic">
+        <label htmlFor="query">
           <input
-            name="file-type"
-            type="number"
-            placeholder="Width"
-            onChange={(evt) => setWidth(evt.target.value)}
+            autoFocus
+            name="query"
+            type="text"
+            placeholder="Search"
+            onChange={(evt) => setQuery(evt.target.value)}
           />
         </label>
-      </p>
-      <p>
-        <label htmlFor="file-type">
-          <input
-            name="file-type"
-            type="number"
-            placeholder="Height"
-            onChange={(evt) => setHeight(evt.target.value)}
-          />
-        </label>
-      </p>
-      <input type="submit" value="Search" />
+        <SearchButton />
+      </div>
+      <div className="search-bar__additional">
+        <p>
+          <label htmlFor="file-type">
+            <input
+              name="file-type"
+              type="number"
+              placeholder="Width"
+              onChange={(evt) => setWidth(evt.target.value)}
+            />
+          </label>
+        </p>
+        <p>
+          <label htmlFor="file-type">
+            <input
+              name="file-type"
+              type="number"
+              placeholder="Height"
+              onChange={(evt) => setHeight(evt.target.value)}
+            />
+          </label>
+        </p>
+      </div>
     </form>
   );
 }

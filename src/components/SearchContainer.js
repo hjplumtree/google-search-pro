@@ -1,12 +1,12 @@
-﻿import { Navigator } from "./Navigator";
-import { SearchBar } from "./SearchBar";
+﻿import Navigator from "./Navigator";
+import SearchRoutes from "./SearchRoutes";
 import "./SearchContainer.css";
 
 export default function SearchContainer() {
   return (
     <main className="search-container">
       <Navigator />
-      <SearchBar />
+      <SearchRoutes />
     </main>
   );
 }
