@@ -2,6 +2,7 @@
   return (
     <input
       autoFocus
+      required
       name="search"
       type="text"
       placeholder="Search"

@@ -53,6 +53,7 @@ export default function SearchKeywords() {
             <label className="search-bar__keyword">
               <input
                 autoFocus
+                required
                 name={el.id}
                 type="text"
                 placeholder={"Keyword " + el.id}
