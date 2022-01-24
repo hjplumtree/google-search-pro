@@ -4,6 +4,14 @@
   padding: 20px;
 }
 
+.search-bar input[type="text"],
+.search-bar input[type="number"] {
+  padding-left: 10px;
+}
+.search-bar input[type="text"]:focus {
+  outline: none;
+}
+
 /* Search Bar Basic */
 /* Search Bar Basic */
 /* Search Bar Basic */
