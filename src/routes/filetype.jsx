@@ -23,11 +23,21 @@ export default function SearchFileType() {
         <p>
           <label htmlFor="file-type">
             <input
-              name="file-type"
               type="text"
-              placeholder="Types: pdf, ps, hwp, html, xls, ppt, doc, svg ..."
+              list="file-type"
+              placeholder="Choose Types"
               onChange={(evt) => setFileType(evt.target.value)}
             />
+            <datalist id="file-type">
+              <option value="pdf" />
+              <option value="ps" />
+              <option value="hwp" />
+              <option value="html" />
+              <option value="xls" />
+              <option value="pdf" />
+              <option value="doc" />
+              <option value="svg" />
+            </datalist>
           </label>
         </p>
       </div>
