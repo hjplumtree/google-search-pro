@@ -1,6 +1,6 @@
 ﻿.header {
   text-align: center;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
 .header__title + p {
@@ -8,5 +8,5 @@
 }
 
 .header p {
-  line-height: 1.7;
+  line-height: 1.8;
 }

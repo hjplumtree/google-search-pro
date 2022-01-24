@@ -1,4 +1,6 @@
 .container {
   width: clamp(0, 100%, 600px);
-  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
