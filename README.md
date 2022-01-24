@@ -1,7 +1,9 @@
+
 # Google Search Pro
 
 Don't remember Google search tips?  
 No need just search like pro!!
+<https://hjplumtree.github.io/google-search-pro/>
 
 ---
 
