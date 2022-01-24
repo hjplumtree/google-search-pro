@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import Logo from "./components/Logo";
 import SearchContainer from "./components/SearchContainer";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Logo />
         <Header />
         <SearchContainer />
+        <Footer />
       </BrowserRouter>
     </div>
   );

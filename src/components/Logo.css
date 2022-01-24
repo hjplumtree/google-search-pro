@@ -1,5 +1,7 @@
 ﻿.logo h1 a {
   text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 .logo .blue {

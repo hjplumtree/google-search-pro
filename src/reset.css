@@ -67,3 +67,11 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/*
+  10. Remove list style type
+*/
+
+li {
+  list-style: none;
+}

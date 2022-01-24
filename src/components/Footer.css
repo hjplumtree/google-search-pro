@@ -1,0 +1,25 @@
+﻿.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--main-color-dark);
+  color: var(--white);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contact > ul {
+  display: flex;
+}
+
+.footer__contact a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer__contact li + li {
+  margin-left: 15px;
+}

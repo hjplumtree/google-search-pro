@@ -34,7 +34,7 @@
 .search-bar__basic button[type="submit"] {
   border: none;
   background-color: var(--main-color);
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@
 .search-bar__basic .search-bar__delete {
   min-width: 50px;
   border: none;
-  color: #fff;
+  color: var(--white);
   background-color: var(--main-color);
 }
 
@@ -84,14 +84,14 @@
 .search-bar__additional .search-bar__add-keyword {
   margin-top: 20px;
   height: 40px;
-  color: #fff;
+  color: var(--white);
   background-color: var(--main-color);
   border: none;
   border-radius: 4px;
 }
 
 .search-bar__additional .search-bar__add-keyword:disabled {
-  color: #fff;
+  color: var(--white);
   background-color: var(--main-color-opacity);
   cursor: not-allowed;
 }

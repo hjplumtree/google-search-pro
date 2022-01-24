@@ -1,15 +1,13 @@
 ﻿.navi ul {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
 }
 
 .navi li {
-  list-style-type: none;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 4px;
-}
-
-.navi li + li {
-  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .navi li a {
@@ -22,6 +20,6 @@
 
 .navi li a.active {
   background-color: var(--main-color);
-  color: #fff;
+  color: var(--white);
   border-radius: 4px;
 }
