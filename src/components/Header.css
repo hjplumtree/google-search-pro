@@ -1,0 +1,12 @@
+﻿.header {
+  text-align: center;
+  padding-top: 90px;
+}
+
+.header__title + p {
+  padding-top: 15px;
+}
+
+.header p {
+  line-height: 1.7;
+}
