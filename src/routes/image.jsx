@@ -13,29 +13,29 @@ export default function SearchImage() {
   return (
     <form onSubmit={submitHandler}>
       <label htmlFor="query">
-        Search
         <input
           name="query"
           type="text"
+          placeholder="Search"
           onChange={(evt) => setQuery(evt.target.value)}
         />
       </label>
       <p>
         <label htmlFor="file-type">
-          Width
           <input
             name="file-type"
             type="number"
+            placeholder="Width"
             onChange={(evt) => setWidth(evt.target.value)}
           />
         </label>
       </p>
       <p>
         <label htmlFor="file-type">
-          Height
           <input
             name="file-type"
             type="number"
+            placeholder="Height"
             onChange={(evt) => setHeight(evt.target.value)}
           />
         </label>

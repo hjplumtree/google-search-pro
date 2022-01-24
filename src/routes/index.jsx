@@ -12,6 +12,7 @@ export default function SearchDefault() {
       <input
         name="search"
         type="text"
+        placeholder="Search"
         onChange={(evt) => setInputValue(evt.target.value)}
       />
       <input type="submit" value="Search" />

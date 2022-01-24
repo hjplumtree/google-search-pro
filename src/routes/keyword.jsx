@@ -50,8 +50,12 @@ export default function SearchKeywords() {
         return (
           <p key={el.id}>
             <label>
-              Keyword Search
-              <input name={el.id} type="text" onChange={handleChange} />
+              <input
+                name={el.id}
+                type="text"
+                placeholder="Keyword Search"
+                onChange={handleChange}
+              />
             </label>
             {el.delete && (
               <button onClick={() => handleDelete(el.id)}>X</button>

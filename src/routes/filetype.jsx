@@ -12,22 +12,21 @@ export default function SearchFileType() {
   return (
     <form onSubmit={submitHandler}>
       <label htmlFor="query">
-        Search
         <input
           name="query"
           type="text"
+          placeholder="Search"
           onChange={(evt) => setQuery(evt.target.value)}
         />
       </label>
       <p>
         <label htmlFor="file-type">
-          File Type
           <input
             name="file-type"
             type="text"
+            placeholder="Types: pdf, ps, hwp, html, xls, ppt, doc, svg ..."
             onChange={(evt) => setFileType(evt.target.value)}
           />
-          <p>Types: pdf, ps, hwp, html, xls, ppt, doc, svg ...</p>
         </label>
       </p>
       <input type="submit" value="Search" />

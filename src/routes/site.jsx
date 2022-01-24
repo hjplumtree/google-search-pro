@@ -10,19 +10,19 @@ export default function SearchInSite() {
   return (
     <form onSubmit={submitHandler}>
       <label htmlFor="query">
-        Search
         <input
           name="query"
           type="text"
+          placeholder="Search"
           onChange={(evt) => setQuery(evt.target.value)}
         />
       </label>
       <p>
         <label htmlFor="site-url">
-          Site Url
           <input
             name="site-url"
             type="text"
+            placeholder="URL"
             onChange={(evt) => setSiteUrl(evt.target.value)}
           />
         </label>
