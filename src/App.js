@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="container">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Logo />
         <Header />
         <SearchContainer />
