@@ -1,0 +1,16 @@
+﻿.logo h1 a {
+  text-decoration: none;
+}
+
+.logo .blue {
+  color: var(--main-color);
+}
+.logo .green {
+  color: var(--green);
+}
+.logo .red {
+  color: var(--red);
+}
+.logo .yellow {
+  color: var(--yellow);
+}

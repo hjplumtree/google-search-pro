@@ -1,15 +1,16 @@
 import "./App.css";
 import "./reset.css";
+import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
-import Header from "./components/Header";
+import Logo from "./components/Logo";
 import SearchContainer from "./components/SearchContainer";
 
 function App() {
   return (
     <div className="container">
       <BrowserRouter>
-        <Header />
+        <Logo />
         <SearchContainer />
       </BrowserRouter>
     </div>
