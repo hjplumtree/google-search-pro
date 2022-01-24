@@ -97,3 +97,13 @@
   background-color: var(--main-color-opacity);
   cursor: not-allowed;
 }
+
+/* Search bar description */
+
+.search-bar__description {
+  margin-top: 30px;
+}
+
+.search-bar__description p {
+  line-height: 2;
+}

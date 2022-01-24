@@ -25,7 +25,7 @@ export default function SearchFileType() {
             <input
               type="text"
               list="file-type"
-              placeholder="Choose Types"
+              placeholder="Choose File Type"
               onChange={(evt) => setFileType(evt.target.value)}
             />
             <datalist id="file-type">
@@ -40,6 +40,10 @@ export default function SearchFileType() {
             </datalist>
           </label>
         </p>
+      </div>
+      <div className="search-bar__description">
+        <h3>Tip - File Type</h3>
+        <p>Find the file type you want</p>
       </div>
     </form>
   );

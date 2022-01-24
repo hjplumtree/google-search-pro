@@ -42,6 +42,10 @@ export default function SearchImage() {
           </label>
         </p>
       </div>
+      <div className="search-bar__description">
+        <h3>Tip - Image</h3>
+        <p>Images of the exact size you want</p>
+      </div>
     </form>
   );
 }

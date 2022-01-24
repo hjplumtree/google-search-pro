@@ -23,11 +23,15 @@ export default function SearchInSite() {
             <input
               name="site-url"
               type="text"
-              placeholder="URL"
+              placeholder="Site Url"
               onChange={(evt) => setSiteUrl(evt.target.value)}
             />
           </label>
         </p>
+      </div>
+      <div className="search-bar__description">
+        <h3>Tip - In Site</h3>
+        <p>Search only through the specific site</p>
       </div>
     </form>
   );

@@ -84,6 +84,11 @@ export default function SearchKeywords() {
           onClick={handleClick}
         />
       </div>
+
+      <div className="search-bar__description">
+        <h3>Tip - keyword</h3>
+        <p>Result have an exact keyword or 2</p>
+      </div>
     </form>
   );
 }

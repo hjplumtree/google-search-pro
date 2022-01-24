@@ -15,6 +15,10 @@ export default function SearchDefault() {
         <SearchBar handleQuery={setQuery} />
         <SearchButton />
       </div>
+      <div className="search-bar__description">
+        <h3>Tip - default</h3>
+        <p>It's Google</p>
+      </div>
     </form>
   );
 }
