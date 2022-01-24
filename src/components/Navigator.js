@@ -1,24 +1,39 @@
-﻿import { Link } from "react-router-dom";
+﻿import { NavLink } from "react-router-dom";
 import "./Navigator.css";
 
 export function Navigator() {
+  function handleActive({ isActive }) {
+    if (isActive) {
+      return "active";
+    }
+  }
   return (
     <nav className="navi">
       <ul>
         <li>
-          <Link to="/">Default</Link>
+          <NavLink className={handleActive} to="/">
+            Default
+          </NavLink>
         </li>
         <li>
-          <Link to="/keyword">Keywords</Link>
+          <NavLink className={handleActive} to="/keyword">
+            Keyword
+          </NavLink>
         </li>
         <li>
-          <Link to="/site">In site</Link>
+          <NavLink className={handleActive} to="/site">
+            In Site
+          </NavLink>
         </li>
         <li>
-          <Link to="/filetype">File type</Link>
+          <NavLink className={handleActive} to="/filetype">
+            File Type
+          </NavLink>
         </li>
         <li>
-          <Link to="/image">Image</Link>
+          <NavLink className={handleActive} to="/image">
+            Image
+          </NavLink>
         </li>
       </ul>
     </nav>
