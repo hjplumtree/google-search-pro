@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SearchButton from "../components/SearchButton";
+import SearchBar from "../components/SearchBar";
 
 export default function SearchImage() {
   const [query, setQuery] = useState("");
@@ -15,13 +16,7 @@ export default function SearchImage() {
     <form onSubmit={submitHandler}>
       <div className="search-bar__basic">
         <label htmlFor="query">
-          <input
-            autoFocus
-            name="query"
-            type="text"
-            placeholder="Search"
-            onChange={(evt) => setQuery(evt.target.value)}
-          />
+          <SearchBar handleQuery={setQuery} />
         </label>
         <SearchButton />
       </div>

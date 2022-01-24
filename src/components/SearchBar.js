@@ -1,21 +1,11 @@
-﻿import { Routes, Route } from "react-router-dom";
-import SearchDefault from "../routes";
-import SearchInSite from "../routes/site";
-import SearchKeywords from "../routes/keyword";
-import SearchFileType from "../routes/filetype";
-import SearchImage from "../routes/image";
-import "./SearchBar.css";
-
-export function SearchBar(props) {
+﻿export default function SearchBar(prop) {
   return (
-    <section className="search-bar">
-      <Routes>
-        <Route path="/" element={<SearchDefault />} />
-        <Route path="keyword" element={<SearchKeywords />} />
-        <Route path="site" element={<SearchInSite />} />
-        <Route path="filetype" element={<SearchFileType />} />
-        <Route path="image" element={<SearchImage />} />
-      </Routes>
-    </section>
+    <input
+      autoFocus
+      name="search"
+      type="text"
+      placeholder="Search"
+      onChange={(evt) => prop.handleQuery(evt.target.value)}
+    />
   );
 }

@@ -1,21 +1,20 @@
 import { useState } from "react";
+import SearchButton from "../components/SearchButton";
+import SearchBar from "../components/SearchBar";
 
 export default function SearchDefault() {
-  const [inputValue, setInputValue] = useState("");
+  const [query, setQuery] = useState("");
 
   function submitHandler(evt) {
     evt.preventDefault();
-    window.open(`http://google.com/search?q=${inputValue}`);
+    window.open(`http://google.com/search?q=${query}`);
   }
   return (
     <form onSubmit={submitHandler}>
-      <input
-        name="search"
-        type="text"
-        placeholder="Search"
-        onChange={(evt) => setInputValue(evt.target.value)}
-      />
-      <input type="submit" value="Search" />
+      <div className="search-bar__basic">
+        <SearchBar handleQuery={setQuery} />
+        <SearchButton />
+      </div>
     </form>
   );
 }
