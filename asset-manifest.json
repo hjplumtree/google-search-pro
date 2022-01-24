@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/google-search-pro/static/css/main.666415d1.css",
+    "main.js": "/google-search-pro/static/js/main.30b6cdc7.js",
+    "static/js/787.607f5e41.chunk.js": "/google-search-pro/static/js/787.607f5e41.chunk.js",
+    "index.html": "/google-search-pro/index.html",
+    "main.666415d1.css.map": "/google-search-pro/static/css/main.666415d1.css.map",
+    "main.30b6cdc7.js.map": "/google-search-pro/static/js/main.30b6cdc7.js.map",
+    "787.607f5e41.chunk.js.map": "/google-search-pro/static/js/787.607f5e41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.666415d1.css",
+    "static/js/main.30b6cdc7.js"
+  ]
+}
