@@ -3,7 +3,10 @@
 
 Don't remember Google search tips?  
 No need just search like pro!!   
-<https://hjplumtree.github.io/google-search-pro/>
+<https://hjplumtree.github.io/google-search-pro/>   
+   
+###Published data
+version 1: 2022/01/24   
 
 ---
 
@@ -42,15 +45,12 @@ React, react-router, ~~Google search engine API, axios~~
 - [X] react-router
 - [X] css
 - [X] github page
-
+   
 ## Things to consider after published
 - [ ] how to get feedback?
 - [ ] plan for more features or guide for better search experience
 
 ---
-
-## Published Date
-- 1/24 first published
 
 
 ## References
