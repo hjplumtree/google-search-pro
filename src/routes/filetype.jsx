@@ -34,7 +34,6 @@ export default function SearchFileType() {
               <option value="hwp" />
               <option value="html" />
               <option value="xls" />
-              <option value="pdf" />
               <option value="doc" />
               <option value="svg" />
             </datalist>
