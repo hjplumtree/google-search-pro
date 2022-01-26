@@ -7,11 +7,13 @@ No need just search like pro!!
 
 ---
 
-## Features(in progress)
+## Features
 
-- A search word in the title
-- Must includes two search words
-- Search results for a specific site
+- Default search(Google)
+- Keywords search
+- In Site search
+- File Type search
+- Image search
 
 ---
 
@@ -38,11 +40,19 @@ React, react-router, ~~Google search engine API, axios~~
 ## To do
 
 - [X] react-router
-- [ ] css
-- [ ] github page
+- [X] css
+- [X] github page
+
+## Things to consider after published
 - [ ] how to get feedback?
+- [ ] plan for more features or guide for better search experience
 
 ---
+
+## Published Date
+- 1/24 first published
+
+
 ## References
 
 - https://support.google.com/websearch/answer/2466433?hl=en
