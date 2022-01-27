@@ -6,9 +6,11 @@ No need just search like pro!!
 <https://hjplumtree.github.io/google-search-pro/>   
 
 
+
 ### Stacks
 
 React, react-router, ~~Google search engine API, axios~~  
+
 
 
 ## Features
@@ -20,10 +22,13 @@ React, react-router, ~~Google search engine API, axios~~
 - Image search
 
 
+
 ---
 
 
+
 # Develoment logs below
+
 
 
 ### To do
@@ -33,6 +38,7 @@ React, react-router, ~~Google search engine API, axios~~
 - [X] github page
    
 
+
 ### Getting ready for Version 2
 
 - Target: SEO search or reserching before product content
@@ -40,6 +46,7 @@ React, react-router, ~~Google search engine API, axios~~
   - in url
   - Find more modifiers
 - how to get feedback?
+
 
 
 ## Issues
@@ -55,12 +62,14 @@ React, react-router, ~~Google search engine API, axios~~
 - **Solution**: Open the result page in new tab
 
 
+
 ## References
 
 - https://support.google.com/websearch/answer/2466433?hl=en
 - https://stenevang.wordpress.com/2013/02/22/google-advanced-power-search-url-request-parameters/
 - https://makemoneyskills.com/googling-31-tips/
 - https://brunch.co.kr/@jinha0802/23
+
 
 
 ### Published data
