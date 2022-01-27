@@ -21,28 +21,23 @@ React, react-router, ~~Google search engine API, axios~~
 # Develoment logs below
 
 
-## To do
+### To do
 
 - [X] react-router
 - [X] css
 - [X] github page
    
+
 ### Getting ready for Version 2
 
 - Target: SEO search or reserching before product content
 - More features
   - in url
   - Find more modifiers
-
-
-## Consider after published
-
 - how to get feedback?
 
 
-
 ---
-
 
 
 ## Issues
@@ -56,8 +51,6 @@ React, react-router, ~~Google search engine API, axios~~
 
 - **Problem**: "Refused to display 'https://www.google.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'."
 - **Solution**: Open the result page in new tab
-
----
 
 
 ## References
