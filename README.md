@@ -8,10 +8,6 @@ No need just search like pro!!
 ### Stacks
 React, react-router, ~~Google search engine API, axios~~  
 
----
-
-# Develoment logs below
-
 ## Features
 
 - Default search(Google)
@@ -21,6 +17,9 @@ React, react-router, ~~Google search engine API, axios~~
 - Image search
 
 ---
+
+# Develoment logs below
+
 
 ## To do
 
