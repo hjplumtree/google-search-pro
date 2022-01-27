@@ -5,8 +5,11 @@ Don't remember Google search tips?
 No need just search like pro!!   
 <https://hjplumtree.github.io/google-search-pro/>   
 
+
 ### Stacks
+
 React, react-router, ~~Google search engine API, axios~~  
+
 
 ## Features
 
@@ -16,7 +19,9 @@ React, react-router, ~~Google search engine API, axios~~
 - File Type search
 - Image search
 
+
 ---
+
 
 # Develoment logs below
 
@@ -35,9 +40,6 @@ React, react-router, ~~Google search engine API, axios~~
   - in url
   - Find more modifiers
 - how to get feedback?
-
-
----
 
 
 ## Issues
