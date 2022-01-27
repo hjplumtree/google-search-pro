@@ -10,6 +10,8 @@ React, react-router, ~~Google search engine API, axios~~
 
 ---
 
+# Develoment logs below
+
 ## Features
 
 - Default search(Google)
@@ -67,7 +69,6 @@ React, react-router, ~~Google search engine API, axios~~
 - https://brunch.co.kr/@jinha0802/23
 
 
---- 
 ### Published data
 version 1: 2022/01/24   
 version 2: . . . 
