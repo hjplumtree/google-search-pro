@@ -21,6 +21,16 @@ React, react-router, ~~Google search engine API, axios~~
 - File Type search
 - Image search
 
+   
+
+
+## Getting ready for Version 2
+
+- Target: SEO search or reserching before product content
+- More features
+  - in url
+  - Find more modifiers
+- how to get feedback?
 
 
 ---
@@ -30,22 +40,11 @@ React, react-router, ~~Google search engine API, axios~~
 # Develoment logs below
 
 
-
 ### To do
 
 - [X] react-router
 - [X] css
 - [X] github page
-   
-
-
-### Getting ready for Version 2
-
-- Target: SEO search or reserching before product content
-- More features
-  - in url
-  - Find more modifiers
-- how to get feedback?
 
 
 
