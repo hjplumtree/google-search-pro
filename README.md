@@ -13,7 +13,7 @@ React, react-router, ~~Google search engine API, axios~~
 
 
 
-## Features
+### Features
 
 - Default search(Google)
 - Keywords search
