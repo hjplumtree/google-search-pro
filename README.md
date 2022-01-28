@@ -62,15 +62,15 @@ React, react-router, ~~Google search engine API, axios~~
 
 
 
-## References
+### Published data
+version 1: 2022/01/24   
+version 2: . . . 
+
+
+### References
 
 - https://support.google.com/websearch/answer/2466433?hl=en
 - https://stenevang.wordpress.com/2013/02/22/google-advanced-power-search-url-request-parameters/
 - https://makemoneyskills.com/googling-31-tips/
 - https://brunch.co.kr/@jinha0802/23
 
-
-
-### Published data
-version 1: 2022/01/24   
-version 2: . . . 
