@@ -64,7 +64,8 @@ React, react-router, ~~Google search engine API, axios~~
 
 ### Published data
 version 1: 2022/01/24   
-version 2: . . . 
+version 2: CRA to NextJS
+[https://www.pheuberger.com/convert-create-react-app-to-nextjs/]
 
 
 ### References
