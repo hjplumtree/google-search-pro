@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SearchButton from "../components/SearchButton";
+import React from "react";
 
 export default function SearchKeywords() {
   const [queries, setQueries] = useState([{ id: 1, q: "" }]);

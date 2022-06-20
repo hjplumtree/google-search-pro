@@ -2,6 +2,7 @@ import "./App.css";
 import "./reset.css";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
+import React from "react";
 
 import Logo from "./components/Logo";
 import SearchContainer from "./components/SearchContainer";

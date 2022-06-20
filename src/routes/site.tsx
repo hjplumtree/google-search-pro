@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SearchButton from "../components/SearchButton";
 import SearchBar from "../components/SearchBar";
+import React from "react";
 
 export default function SearchInSite() {
   const [query, setQuery] = useState("");

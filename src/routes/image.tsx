@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SearchButton from "../components/SearchButton";
 import SearchBar from "../components/SearchBar";
+import React from "react";
 
 export default function SearchImage() {
   const [query, setQuery] = useState("");
@@ -9,7 +10,7 @@ export default function SearchImage() {
   function submitHandler(evt) {
     evt.preventDefault();
     window.open(
-      `https://www.google.com/search?q=${query}+imagesize%3A${width}x${height}&tbm=isch`,
+      `https://www.google.com/search?q=${query}+imagesize%3A${width}x${height}&tbm=isch`
     );
   }
   return (

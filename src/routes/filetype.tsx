@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SearchButton from "../components/SearchButton";
 import SearchBar from "../components/SearchBar";
+import React from "react";
 
 export default function SearchFileType() {
   const [query, setQuery] = useState("");
@@ -8,7 +9,7 @@ export default function SearchFileType() {
   function submitHandler(evt) {
     evt.preventDefault();
     window.open(
-      `https://www.google.com/search?q=filetype%3A${fileType}+${query}`,
+      `https://www.google.com/search?q=filetype%3A${fileType}+${query}`
     );
   }
   return (
