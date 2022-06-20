@@ -7,14 +7,14 @@ export default function SearchImage() {
   const [query, setQuery] = useState("");
   const [width, setWidth] = useState("");
   const [height, setHeight] = useState("");
-  function submitHandler(evt) {
+  function submitHandler(evt: React.FormEvent<HTMLFormElement>) {
     evt.preventDefault();
     window.open(
       `https://www.google.com/search?q=${query}+imagesize%3A${width}x${height}&tbm=isch`
     );
   }
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={(evt) => submitHandler(evt)}>
       <div className="search-bar__basic">
         <label htmlFor="query">
           <SearchBar handleQuery={setQuery} />

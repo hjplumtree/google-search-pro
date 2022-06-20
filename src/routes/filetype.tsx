@@ -6,14 +6,14 @@ import React from "react";
 export default function SearchFileType() {
   const [query, setQuery] = useState("");
   const [fileType, setFileType] = useState("");
-  function submitHandler(evt) {
+  function submitHandler(evt: React.FormEvent<HTMLFormElement>) {
     evt.preventDefault();
     window.open(
       `https://www.google.com/search?q=filetype%3A${fileType}+${query}`
     );
   }
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={(evt) => submitHandler(evt)}>
       <div className="search-bar__basic">
         <label htmlFor="query">
           <SearchBar handleQuery={setQuery} />

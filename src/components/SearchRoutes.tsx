@@ -7,7 +7,7 @@ import SearchImage from "../routes/image";
 import "./SearchRoutes.css";
 import React from "react";
 
-export default function SearchBar(props) {
+export default function SearchBar() {
   return (
     <section className="search-bar">
       <Routes>

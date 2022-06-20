@@ -6,12 +6,12 @@ import React from "react";
 export default function SearchDefault() {
   const [query, setQuery] = useState("");
 
-  function submitHandler(evt) {
+  function submitHandler(evt: React.FormEvent<HTMLFormElement>) {
     evt.preventDefault();
     window.open(`http://google.com/search?q=${query}`);
   }
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={(evt) => submitHandler(evt)}>
       <div className="search-bar__basic">
         <SearchBar handleQuery={setQuery} />
         <SearchButton />

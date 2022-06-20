@@ -2,10 +2,16 @@ import { useState } from "react";
 import SearchButton from "../components/SearchButton";
 import React from "react";
 
-export default function SearchKeywords() {
-  const [queries, setQueries] = useState([{ id: 1, q: "" }]);
+interface Ielement {
+  id: string;
+  q: string;
+  delete?: boolean;
+}
 
-  function submitHandler(evt) {
+export default function SearchKeywords() {
+  const [queries, setQueries] = useState([{ id: "1", q: "" }]);
+
+  function submitHandler(evt: React.FormEvent<HTMLFormElement>) {
     evt.preventDefault();
 
     let query = "";
@@ -21,9 +27,9 @@ export default function SearchKeywords() {
     window.open(`https://www.google.com/search?q=${query}`);
   }
 
-  function handleChange(evt) {
+  function handleChange(evt: React.ChangeEvent<HTMLInputElement>) {
     const { value } = evt.target;
-    const name = Number(evt.target.name);
+    const name = evt.target.name;
     const newQueries = [...queries];
     for (let i = 0; i < newQueries.length; i++) {
       const query = newQueries[i];
@@ -34,23 +40,22 @@ export default function SearchKeywords() {
     setQueries(newQueries);
   }
 
-  function handleClick(evt) {
+  function handleClick(evt: React.MouseEvent<HTMLInputElement, MouseEvent>) {
     evt.preventDefault();
     const newId = queries.length + 1;
-    const newQueries = [...queries, { id: newId, q: "", delete: true }];
+    const newQueries = [...queries, { id: String(newId), q: "", delete: true }];
     setQueries(newQueries);
   }
 
-  function handleDelete(id) {
+  function handleDelete(id: string) {
     const newQueries = queries.filter((el) => el.id !== id);
     setQueries(newQueries);
   }
   return (
-    <form onSubmit={submitHandler}>
-      {queries.map((el) => {
+    <form onSubmit={(evt) => submitHandler(evt)}>
+      {queries.map((el: Ielement) => {
         return (
           <p className="search-bar__basic" key={el.id}>
-            {/* <div className="search-bar__basic"> */}
             <label className="search-bar__keyword">
               <input
                 autoFocus
@@ -58,7 +63,7 @@ export default function SearchKeywords() {
                 name={el.id}
                 type="text"
                 placeholder={"Keyword " + el.id}
-                onChange={handleChange}
+                onChange={(evt) => handleChange(evt)}
               />
             </label>
             {!el.delete && <SearchButton />}
@@ -71,7 +76,6 @@ export default function SearchKeywords() {
                 X
               </button>
             )}
-            {/* </div> */}
           </p>
         );
       })}
@@ -82,7 +86,7 @@ export default function SearchKeywords() {
           disabled={queries.length === 2 && true}
           type="button"
           value="Add Keyword"
-          onClick={handleClick}
+          onClick={(evt) => handleClick(evt)}
         />
       </div>
 

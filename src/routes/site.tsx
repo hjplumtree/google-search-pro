@@ -6,12 +6,12 @@ import React from "react";
 export default function SearchInSite() {
   const [query, setQuery] = useState("");
   const [siteUrl, setSiteUrl] = useState("");
-  function submitHandler(evt) {
+  function submitHandler(evt: React.FormEvent<HTMLFormElement>) {
     evt.preventDefault();
     window.open(`https://www.google.com/search?q=site%3A${siteUrl}+${query}`);
   }
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={(evt) => submitHandler(evt)}>
       <div className="search-bar__basic">
         <label htmlFor="query">
           <SearchBar handleQuery={setQuery} />
